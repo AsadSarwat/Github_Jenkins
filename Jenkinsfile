@@ -20,34 +20,34 @@ pipeline {
                 }
             }
         }
-        stage('Build') {
+        stage('Build the code') {
             steps {
-                echo "Building the code using Maven or any other build automation tool"
+                echo "Building the code..."
             }
         }
         stage('Unit and Integration Tests') {
             steps {
-                echo "Running unit and integration tests using test automation tools like JUnit or TestNG"
+                echo "Running unit and integration tests ...."
             }
         }
         stage('Code Analysis') {
             steps {
-                echo "Integrating a code analysis tool like SonarQube or Checkstyle to analyze the code"
+                echo "Integrating a code analysis tool ..."
             }
         }
         stage('Security Scan') {
             steps {
-                echo "Performing security scans using tools like OWASP ZAP or SonarQube Security Plugin"
+                echo "Performing security scans using tools ..."
             }
         }
         stage('Deploy to Staging') {
             steps {
-                echo "Deploying the application to a staging server like AWS EC2 instance"
+                echo "Deploying the application ..."
             }
         }
         stage('Integration Tests on Staging') {
             steps {
-                echo "Running integration tests on the staging environment"
+                echo "Running integration tests ...."
             }
         }
         stage('Deploy to Production') {
